@@ -1,14 +1,18 @@
-import React from 'react'
+var React = require('react');
 
-const Map = React.createClass({
+var Map = React.createClass({
 
-	componentDidMount() {
+	componentDidMount(){
 
-		//call the map initialization immediately after the initial render 
+		// Only componentDidMount is called when the component is first added to
+		// the page. This is why we are calling the following method manually. 
+		// This makes sure that our map initialization code is run the first time.
+
 		this.componentDidUpdate();
 	},
 
-	componentDidUpdate() {
+	componentDidUpdate(){
+
 		if(this.lastLat == this.props.lat && this.lastLng == this.props.lng){
 
 			// The map has already been initialized at this address.
@@ -35,13 +39,14 @@ const Map = React.createClass({
 		});
 	},
 
-	render() {
-		return(
+	render(){
+
+		return (
 			<div className="map-holder">
 				<p>Loading...</p>
 				<div id="map"></div>
 			</div>
-		)
+		);
 	}
 
 });

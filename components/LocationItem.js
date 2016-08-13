@@ -1,15 +1,14 @@
-import React from 'react'
+var React = require('react');
+var moment = require('moment');
 
-const LocationItem = React.createClass({
+var LocationItem = React.createClass({
 
-	handleClick(e) {
-
-		e.preventDefault();
-
+	handleClick(){
 		this.props.onClick(this.props.address);
-	}
+	},
 
-	render() {
+	render(){
+
 		var cn = "list-group-item";
 
 		if(this.props.active){
@@ -23,6 +22,7 @@ const LocationItem = React.createClass({
 				<span className="glyphicon glyphicon-menu-right"></span>
 			</a>
 		)
+
 	}
 
 });
