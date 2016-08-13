@@ -1,5 +1,9 @@
 import React from 'react'
 
+var Search = require('./Search');
+var Map = require('./Map');
+var CurrentLocation = require('./CurrentLocation');
+var LocationList = require('./LocationsList');
 
 const App = React.createClass({
 
@@ -140,4 +144,6 @@ const App = React.createClass({
 			)
 	}
 
-})
+});
+
+module.exports = App
