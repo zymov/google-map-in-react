@@ -1,0 +1,34 @@
+{
+  "name": "google-map-in-react",
+  "version": "1.0.0",
+  "description": "a google map component for finding locations and store these locations into your browser's LocalStorage",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EyEder/google-map-in-react.git"
+  },
+  "author": "zym",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EyEder/google-map-in-react/issues"
+  },
+  "homepage": "https://github.com/EyEder/google-map-in-react#readme",
+  "dependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "moment": "^2.10.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
